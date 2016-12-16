@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 /**
- * @author ninad
+ * @author Ashutosh
  */
 public class clientThread extends Thread {
 
