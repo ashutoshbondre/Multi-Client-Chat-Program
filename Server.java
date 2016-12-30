@@ -48,7 +48,8 @@ public class Server {
 					out.close();
 					clientSocket.close();
 				}
-			} catch (IOException e) {
+			} catch (IOException e) 
+			{
 				System.out.println(e);
 			}
 		}
