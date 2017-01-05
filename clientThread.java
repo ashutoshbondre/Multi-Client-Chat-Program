@@ -23,6 +23,7 @@ public class clientThread extends Thread {
 	 * @param clientSocket - Clients socket object
 	 * @param threads - Each client gets access to other threads
 	 */
+	
 	public clientThread(Socket clientSocket, clientThread[] threads) {
 		this.clientSocket = clientSocket;
 		this.threads = threads;
