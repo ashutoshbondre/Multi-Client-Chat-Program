@@ -10,6 +10,7 @@ public class Server
 	private static Socket clientSocket = null;
 
 	private static final int CLIENT_MAX = 200;
+	
 	private static final clientThread[] threads = new clientThread[CLIENT_MAX];
 	/*** Initialize server parameters and start server
 	 * @param args
