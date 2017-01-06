@@ -37,7 +37,8 @@ public class Server
 			try {
 				clientSocket = sSocket.accept();
 				int i = 0;
-				for (i = 0; i < CLIENT_MAX; i++) {
+				for (i = 0; i < CLIENT_MAX; i++) 
+				{
 					if (threads[i] == null) {
 						(threads[i] = new clientThread(clientSocket, threads)).start();
 						break;
