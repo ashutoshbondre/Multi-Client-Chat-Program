@@ -3,7 +3,6 @@ import java.io.*;
 
 public class Server
 {
-
 	private static int sPort = 8000;
 	private static ServerSocket sSocket;
 
