@@ -66,6 +66,7 @@ public class clientThread extends Thread {
 			}
 
 			while (true) {
+				
 				String line;
 				line = (String) in.readObject();
 				if(line.startsWith("/quit"))
