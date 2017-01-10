@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
+
 /**
  * @author Ashutosh
  */
@@ -31,6 +32,7 @@ public class clientThread extends Thread
 		this.clientSocket = clientSocket;
 		this.threads = threads;
 		clientCount = threads.length;
+		
 	}
 
 	public void run() 
