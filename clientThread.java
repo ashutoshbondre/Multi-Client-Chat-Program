@@ -11,7 +11,8 @@ import java.net.Socket;
  * @author Ashutosh
  */
 
-public class clientThread extends Thread {
+public class clientThread extends Thread 
+{
 
 	private String clientName = null;
 	private ObjectInputStream in = null;
@@ -25,7 +26,8 @@ public class clientThread extends Thread {
 	 * @param threads - Each client gets access to other threads
 	 */
 	
-	public clientThread(Socket clientSocket, clientThread[] threads) {
+	public clientThread(Socket clientSocket, clientThread[] threads) 
+	{
 		this.clientSocket = clientSocket;
 		this.threads = threads;
 		clientCount = threads.length;
