@@ -74,7 +74,8 @@ public class clientThread extends Thread
 				line = (String) in.readObject();
 				if(line.startsWith("/quit"))
 					break;
-				if (line.length() > 0) {
+				if (line.length() > 0) 
+				{
 					String[] words = line.split("\\s", 3);
 					if (words.length > 2) {
 						if (words[0].toLowerCase().equals("broadcast") && words[1].toLowerCase().equals("message")) {
