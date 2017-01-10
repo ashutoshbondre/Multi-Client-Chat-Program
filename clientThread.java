@@ -33,7 +33,8 @@ public class clientThread extends Thread
 		clientCount = threads.length;
 	}
 
-	public void run() {
+	public void run() 
+	{
 		int clientCount = this.clientCount;
 		clientThread[] threads = this.threads;
 
