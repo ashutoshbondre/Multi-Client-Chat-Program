@@ -96,12 +96,14 @@ public class clientThread extends Thread
 							if (!words[2].trim().isEmpty()) {
 								synchronized (this) {
 									boolean success = false;
-									for (int i = 0; i < clientCount; i++) {
+									for (int i = 0; i < clientCount; i++) 
+									{
 										if (threads[i] != null && threads[i].clientName != null && threads[i] != this) {
 											success = sendFile(words, threads[i], this, true);
 										}
 									}
-									if(success) {
+									if(success) 
+									{
 										System.out.println("Broadcast:File sent!");
 										this.out.writeObject("File sent!");
 										this.out.flush();
