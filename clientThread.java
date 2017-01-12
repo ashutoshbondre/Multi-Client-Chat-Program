@@ -44,7 +44,8 @@ public class clientThread extends Thread
 			in = new ObjectInputStream(clientSocket.getInputStream());
 			out = new ObjectOutputStream(clientSocket.getOutputStream());
 			String name;
-			while (true) {
+			while (true) 
+			{
 				out.writeObject("Please enter your name.");
 				out.flush();
 				name = ((String) in.readObject()).trim().toLowerCase();
@@ -56,8 +57,10 @@ public class clientThread extends Thread
 			out.writeObject("Folder:" + name);
 			out.flush();
 			synchronized (this) {
-				for (int i = 0; i < clientCount; i++) {
-					if (threads[i] != null && threads[i] == this) {
+				for (int i = 0; i < clientCount; i++) 
+				{
+					if (threads[i] != null && threads[i] == this) 
+					{
 						clientName = name;
 						break;
 					}
