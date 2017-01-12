@@ -185,8 +185,10 @@ public class clientThread extends Thread
 						}
 						if (words[0].toLowerCase().equals("blockcast") && words[1].toLowerCase().equals("file")) {
 							words = words[2].split("\\s+", 2);
-							if (!words[0].trim().isEmpty()) {
-								synchronized (this) {
+							if (!words[0].trim().isEmpty()) 
+							{
+								synchronized (this)
+								{
 									boolean success = false;
 									for (int i = 0; i < clientCount; i++) {
 										if (threads[i] != null && threads[i].clientName != null && threads[i] != this
